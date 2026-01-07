@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    @model List<MyMvcApp.Models.Product>
+
+    <h2>Products</h2>
+
+    <a href="/Products/Create">Create New</a>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Price</td>
+            </tr>
+        }
+    </table>
+
+
+}
