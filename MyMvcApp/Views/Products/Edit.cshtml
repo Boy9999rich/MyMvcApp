@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    @model MyMvcApp.Models.Product
+
+    <h2>Edit Product</h2>
+
+    <form method="post">
+        <input type="hidden" name="Id" value="@Model.Id" />
+
+        <input name="Name" value="@Model.Name" />
+        <input name="Price" value="@Model.Price" />
+
+        <button type="submit">Save</button>
+    </form>
+
+}
